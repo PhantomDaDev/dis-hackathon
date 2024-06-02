@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DIS Hackathon</title>
-  <link rel="stylesheet" href="index.css">
-</head>
-<body>
-
-<nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#services">Gallery</a>
-  <a href="#contact">Contact</a>
-</nav>
-<br><br>
-<h1 class="content">Dunes' Hackathon</h1>
-<h3>The drive to create</h3>
-<br><br><br><br>
-<h1 class="content">About</h1>
-<h1 class="content">Gallery</h1>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Gallery</a>
+      <a href="#contact">Contact</a>
+      <button id="toggle-mode" aria-label="Toggle Light/Dark Mode" title="Toggle Light/Dark Mode">☀️</button>
+    </nav>
+    <br /><br />
+    <br /><br />
+    <h1 class="content grad">Dunes' Hackathon</h1>
+    <h3>The drive to <span class="create">create</span></h3>
+    <br /><br /><br /><br /><br /><br /><br />
+    <h1 class="content grad">About</h1>
+    <p class="about">
+      Dunes International School Hackathon Competition <br />
+      is an opportunity for every student across Abu Dhabi to showcase their
+      <br />
+      talent in coding and designing. Not only that, it is also a place where
+      <br />
+      students can meet like-minded individuals and interact with other people!
+      <br />
+    </p>
+    <h1 class="content grad">Gallery</h1>
+    <script>
+      const toggleButton = document.getElementById("toggle-mode");
+      toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+        toggleButton.textContent = document.body.classList.contains("light-mode") ? "🌙" : "☀️";
+      });
+    </script>
+  </body>
 </html>
+
