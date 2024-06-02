@@ -15,8 +15,8 @@ body.light-mode {
   --text-color: #000;
   --nav-background-color: #ddd;
   --link-color: #000;
-  --gradient-start: #ff7e5f;
-  --gradient-end: #feb47b;
+  --gradient-start: #ff00ff;
+  --gradient-end: #00a6ff;
 }
 
 body {
