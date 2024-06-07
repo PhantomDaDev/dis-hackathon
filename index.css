@@ -66,6 +66,10 @@ nav a {
   text-decoration: none;
   position: relative;
 }
+nav a:target {
+  border-bottom: 2px solid var(--link-color);
+  font-weight: bold;
+}
 
 nav a::after {
   content: '';
