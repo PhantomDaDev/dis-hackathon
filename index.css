@@ -86,7 +86,7 @@ nav a::before {
   bottom: 0;
   left: 50%;
   background-color: var(--link-color);
-  transition: width 0.25s ease-out, left 0.25s ease-out; /* Add left transition */
+  transition: width 0.30s ease-out, left 0.25s ease-out; /* 
 }
 
 nav a:hover::after,
