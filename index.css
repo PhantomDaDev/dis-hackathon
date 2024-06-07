@@ -137,3 +137,17 @@ button#toggle-mode {
   cursor: pointer;
   padding: 0;
 }
+
+body {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
