@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
 
-<nav>
-  <a href="#" class="hover-left">Home</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#" class="hover-right">Contact</a>
-</nav>
-
-
 :root {
   --background-color: #000;
   --text-color: #fff;
@@ -84,15 +76,17 @@ nav a::after {
   background-color: var(--link-color);
   transform: scaleX(0);
   transition: transform 0.25s ease-out;
-  transform-origin: bottom right; /* Start from bottom right */
-}
-
-nav a.hover-left::after {
-  transform-origin: bottom left; /* Start from bottom left when hovering from left to right */
+  transform-origin: var(--hover-origin, bottom right); /* Start from bottom right */
+  transform: scaleX(var(--hover-scale, 0));
 }
 
 nav a:hover::after {
   transform: scaleX(1);
+
+}
+
+nav a.hover-left::after {
+  transform-origin: bottom left; /* Start from bottom left when hovering from left to right */
 }
 
 
