@@ -75,13 +75,15 @@ nav a::after {
   left: 0;
   background-color: var(--link-color);
   transform: scaleX(0);
-  transform-origin: bottom left; 
   transition: transform 0.25s ease-out;
+  transform-origin: bottom right; /* Start from bottom right */
 }
 
 nav a:hover::after {
   transform: scaleX(1);
+  transform-origin: bottom left; /* End at bottom left */
 }
+
 
 nav a.hover-left::after {
   transform-origin: bottom left;
