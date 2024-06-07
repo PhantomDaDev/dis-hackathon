@@ -94,3 +94,9 @@ nav a.hover-left::after {
 nav a:hover::after {
   transform-origin: bottom left; /* Start from bottom left when hovering from left to right */
 }
+
+/* New CSS rule for hover effect when moving from right to left */
+nav a.hover-right::after {
+  transform-origin: bottom right; /* Start from bottom right when hovering from right to left */
+  transition: transform 0.25s ease-in; /* Use ease-in timing function for smoother effect */
+}
