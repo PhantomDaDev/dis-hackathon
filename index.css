@@ -88,7 +88,6 @@ nav a:hover::after {
   transform: scaleX(1);
 }
 
-
 .about {
   text-align: right;
   text-justify: inter-word;
@@ -106,8 +105,6 @@ nav a:hover::after {
   -webkit-text-fill-color: transparent;
 }
 
-/* Your existing CSS styles... */
-
 /* Customize button appearance */
 button#toggle-mode {
   font-size: 24px; /* Adjust size as needed */
@@ -116,4 +113,3 @@ button#toggle-mode {
   cursor: pointer;
   padding: 0;
 }
-
