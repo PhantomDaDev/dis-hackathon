@@ -1,5 +1,7 @@
+/* Original code */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
 
+/* Your existing CSS */
 :root {
   --background-color: #000;
   --text-color: #fff;
@@ -20,11 +22,18 @@ body.light-mode {
 
 body {
   font-family: 'JetBrains Mono', monospace;
-  margin: 0;
+  margin-left: 100px;
+  margin-right: 100px; 
   padding: 0;
   background-color: var(--background-color);
   color: var(--text-color);
-  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.jetbrains-mono-400 {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .content {
@@ -69,7 +78,8 @@ nav a::after {
   background-color: var(--link-color);
   transform: scaleX(0);
   transition: transform 0.25s ease-out;
-  transform-origin: bottom right; /* Start from bottom right */
+  transform-origin: var(--hover-origin, bottom right); /* Start from bottom right */
+  transform: scaleX(var(--hover-scale, 0));
 }
 
 nav a:hover::after {
@@ -80,6 +90,7 @@ nav a.hover-left::after {
   transform-origin: bottom left; /* Start from bottom left when hovering from left to right */
 }
 
+/* Additional CSS for hover effect */
 nav a:hover::after {
   transform-origin: bottom left; /* Start from bottom left when hovering from left to right */
 }
