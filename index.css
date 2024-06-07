@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
 
-/* Basic CSS for navigation bar */
 :root {
   --background-color: #000;
   --text-color: #fff;
@@ -76,8 +75,12 @@ nav a::after {
   left: 0;
   background-color: var(--link-color);
   transform: scaleX(0);
-  transform-origin: bottom right;
+  transform-origin: bottom left; 
   transition: transform 0.25s ease-out;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
 }
 
 nav a.hover-left::after {
