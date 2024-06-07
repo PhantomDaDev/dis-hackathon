@@ -137,11 +137,28 @@ button#toggle-mode {
   cursor: pointer;
   padding: 0;
 }
-
-body {
+.fade-in {
   opacity: 0;
-  animation: fadeInAnimation 1s ease forwards;
 }
+
+/* Apply fade-in animation to each element with a delay */
+.fade-in:nth-child(1) {
+  animation: fadeInAnimation 1s ease forwards;
+  animation-delay: 0.2s; /* Delay for the first element */
+}
+
+.fade-in:nth-child(2) {
+  animation: fadeInAnimation 1s ease forwards;
+  animation-delay: 0.4s; /* Delay for the second element */
+}
+
+.fade-in:nth-child(3) {
+  animation: fadeInAnimation 1s ease forwards;
+  animation-delay: 0.6s; /* Delay for the third element */
+}
+
+/* Add more nth-child selectors for additional elements */
+/* .fade-in:nth-child(n) { animation-delay: Xs; } */
 
 @keyframes fadeInAnimation {
   from {
@@ -151,3 +168,5 @@ body {
     opacity: 1;
   }
 }
+
+
