@@ -1,135 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hover Effect</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
 
-  :root {
-    --background-color: #000;
-    --text-color: #fff;
-    --nav-background-color: #222;
-    --link-color: #fff;
-    --gradient-start: #ff00ff;
-    --gradient-end: #00a6ff;
-  }
+:root {
+  --background-color: #000;
+  --text-color: #fff;
+  --nav-background-color: #222;
+  --link-color: #fff;
+  --gradient-start: #ff00ff;
+  --gradient-end: #00a6ff;
+}
 
-  body.light-mode {
-    --background-color: #fff;
-    --text-color: #000;
-    --nav-background-color: #ddd;
-    --link-color: #000;
-    --gradient-start: #ff00ff;
-    --gradient-end: #00a6ff;
-  }
+body.light-mode {
+  --background-color: #fff;
+  --text-color: #000;
+  --nav-background-color: #ddd;
+  --link-color: #000;
+  --gradient-start: #ff00ff;
+  --gradient-end: #00a6ff;
+}
 
-  body {
-    font-family: 'JetBrains Mono', monospace;
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    overflow-x: hidden; /* Prevent horizontal scrollbar */
-  }
+body {
+  font-family: 'JetBrains Mono', monospace;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
 
-  .content {
-    font-size: 86px;
-    text-align: left;
-    margin: 10px;
-    font-weight: 400;
-  }
+.content {
+  font-size: 86px;
+  text-align: left;
+  margin: 10px;
+  font-weight: 400;
+}
 
-  h3 {
-    text-align: left;
-    margin: 10px;
-    font-weight: 400;
-    font-size: 60px;
-  }
+h3 {
+  text-align: left;
+  margin: 10px;
+  font-weight: 400;
+  font-size: 60px;
+}
 
-  nav {
-    background-color: var(--nav-background-color);
-    overflow: hidden;
-    border-radius: 1000px;
-    width: 1200px; /* Increase the width */
-    margin: 50px auto 0 auto;
-    display: flex;
-    justify-content: center;
-  }
+nav {
+  background-color: var(--nav-background-color);
+  overflow: hidden;
+  border-radius: 1000px;
+  width: 1200px; /* Increase the width */
+  margin: 50px auto 0 auto;
+  display: flex;
+  justify-content: center;
+}
 
-  nav a {
-    color: var(--link-color);
-    text-align: center;
-    padding: 20px 30px; /* Increase the padding for bigger buttons */
-    text-decoration: none;
-    position: relative;
-  }
+nav a {
+  color: var(--link-color);
+  text-align: center;
+  padding: 20px 30px; /* Increase the padding for bigger buttons */
+  text-decoration: none;
+  position: relative;
+}
 
-  nav a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--link-color);
-    transform: scaleX(0);
-    transition: transform 0.25s ease-out;
-    transform-origin: bottom right; /* Start from bottom right */
-  }
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--link-color);
+  transform: scaleX(0);
+  transition: transform 0.25s ease-out;
+  transform-origin: bottom right; /* Start from bottom right */
+}
 
-  nav a:hover::after {
-    transform: scaleX(1);
-  }
+nav a:hover::after {
+  transform: scaleX(1);
+}
 
-  nav a.hover-left::after {
-    transform-origin: bottom left; /* Start from bottom left when hovering from left to right */
-  }
+nav a.hover-left::after {
+  transform-origin: bottom left; /* Start from bottom left when hovering from left to right */
+}
 
-  .about {
-    text-align: right;
-    text-justify: inter-word;
-  }
-
-  .create {
-    background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .grad {
-    background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  /* Customize button appearance */
-  button#toggle-mode {
-    font-size: 24px; /* Adjust size as needed */
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-  }
-</style>
-</head>
-<body>
-<nav>
-  <a href="#" class="hover-left">Hover Here</a>
-</nav>
-
-<script>
-  const navLink = document.querySelector('nav a');
-
-  navLink.addEventListener('mousemove', (e) => {
-    const hoverLeft = e.clientX < (window.innerWidth / 2);
-    if (hoverLeft) {
-      navLink.classList.add('hover-left');
-    } else {
-      navLink.classList.remove('hover-left');
-    }
-  });
-</script>
-</body>
-</html>
+nav a:hover::after {
+  transform-origin: bottom left; /* Start from bottom left when hovering from left to right */
+}
