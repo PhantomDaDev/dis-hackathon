@@ -79,19 +79,14 @@ nav a::after {
   transform-origin: bottom right; /* Start from bottom right */
 }
 
-nav a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left; /* End at bottom left */
-}
-
-
 nav a.hover-left::after {
-  transform-origin: bottom left;
+  transform-origin: bottom left; /* Start from bottom left when hovering from left to right */
 }
 
 nav a:hover::after {
   transform: scaleX(1);
 }
+
 
 .about {
   text-align: right;
