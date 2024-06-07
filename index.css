@@ -1,7 +1,6 @@
-/* Original code */
+this is the code i want the hover effect to follow my cursor right to left and left to right "
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
 
-/* Your existing CSS */
 :root {
   --background-color: #000;
   --text-color: #fff;
@@ -84,19 +83,36 @@ nav a::after {
 
 nav a:hover::after {
   transform: scaleX(1);
+
 }
 
 nav a.hover-left::after {
   transform-origin: bottom left; /* Start from bottom left when hovering from left to right */
 }
 
-/* Additional CSS for hover effect */
-nav a:hover::after {
-  transform-origin: bottom left; /* Start from bottom left when hovering from left to right */
+
+.about {
+  text-align: right;
+  text-justify: inter-word;
 }
 
-/* New CSS rule for hover effect when moving from right to left */
-nav a.hover-right::after {
-  transform-origin: bottom right; /* Start from bottom right when hovering from right to left */
-  transition: transform 0.25s ease-in; /* Use ease-in timing function for smoother effect */
+.create {
+  background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grad {
+  background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Customize button appearance */
+button#toggle-mode {
+  font-size: 24px; /* Adjust size as needed */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
