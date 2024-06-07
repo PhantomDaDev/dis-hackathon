@@ -80,10 +80,14 @@ nav a::after {
   transition: transform 0.25s ease-out;
 }
 
-nav a:hover::after {
-  transform: scaleX(1);
+nav a.hover-left::after {
   transform-origin: bottom left;
 }
+
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
 
 .about {
   text-align: right;
