@@ -76,8 +76,7 @@ nav a::after {
   left: 0;
   background-color: var(--link-color);
   transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, width 0.25s ease-out, left 0.25s ease-out; /* Add width and left transition */
 }
 
 nav a.hover-left::after {
@@ -86,6 +85,26 @@ nav a.hover-left::after {
 
 nav a:hover::after {
   transform: scaleX(1);
+  width: 0; /* Initial width */
+  left: 50%; /* Initial position */
+}
+
+nav a:hover::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--link-color);
+  transform: scaleX(1);
+  transition: width 0.25s ease-out, left 0.25s ease-out; /* Add width and left transition */
+}
+
+nav a:hover::after,
+nav a:hover::before {
+  left: calc((100% - 100px) / 2); /* Adjust 100px according to your padding */
+  width: calc(100% - ((100% - 100px) / 2) * 2); /* Adjust 100px according to your padding */
 }
 
 
