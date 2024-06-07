@@ -1,6 +1,6 @@
-this is the code i want the hover effect to follow my cursor right to left and left to right "
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
 
+/* Basic CSS for navigation bar */
 :root {
   --background-color: #000;
   --text-color: #fff;
@@ -76,18 +76,16 @@ nav a::after {
   left: 0;
   background-color: var(--link-color);
   transform: scaleX(0);
+  transform-origin: bottom right;
   transition: transform 0.25s ease-out;
-  transform-origin: var(--hover-origin, bottom right); /* Start from bottom right */
-  transform: scaleX(var(--hover-scale, 0));
+}
+
+nav a.hover-left::after {
+  transform-origin: bottom left;
 }
 
 nav a:hover::after {
   transform: scaleX(1);
-
-}
-
-nav a.hover-left::after {
-  transform-origin: bottom left; /* Start from bottom left when hovering from left to right */
 }
 
 
@@ -107,6 +105,8 @@ nav a.hover-left::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* Your existing CSS styles... */
 
 /* Customize button appearance */
 button#toggle-mode {
