@@ -86,15 +86,18 @@ nav a::before {
   bottom: 0;
   left: 50%;
   background-color: var(--link-color);
-  transition: width 0.25s ease-out, left 0.25s ease-out; /* 
+  transition: width 0.25s ease-out, left 0.25s ease-out;
 }
 
 nav a:hover::after,
 nav a:hover::before {
-  left: 0; /* Adjust according to your desired starting position */
+  left: 0;
   width: 100%;
 }
 
+nav a:hover::after {
+  transition-delay: 0.25s;
+}
 nav a:hover::after {
   transition-delay: 0.25s; 
 }
