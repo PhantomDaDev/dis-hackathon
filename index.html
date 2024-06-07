@@ -37,23 +37,7 @@
         toggleButton.textContent = document.body.classList.contains("light-mode") ? "🌙" : "☀️";
       });
 
-      const navLinks = document.querySelectorAll('nav a');
-
-      navLinks.forEach(link => {
-        link.addEventListener('mouseenter', (e) => {
-          const x = e.clientX - e.target.getBoundingClientRect().left;
-          const width = e.target.getBoundingClientRect().width;
-          if (x < width / 2) {
-            link.classList.add('hover-left');
-          } else {
-            link.classList.remove('hover-left');
-          }
-        });
-
-        link.addEventListener('mouseleave', () => {
-          link.classList.remove('hover-left');
-        });
-      });
+      
     </script>
   </body>
 </html>
