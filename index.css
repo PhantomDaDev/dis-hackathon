@@ -40,7 +40,7 @@ body {
 
 .content {
   font-size: 86px;
-  text-align: left;
+  text-align:center;
   margin: 10px;
   font-weight: 400;
 }
@@ -59,12 +59,12 @@ nav {
   width: 1200px; /* Increase the width */
   margin: 50px auto 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content:center;
 }
 
 nav a {
   color: var(--link-color);
-  text-align: center;
+  text-align:center;
   padding: 20px 30px; /* Increase the padding for bigger buttons */
   text-decoration: none;
   position: relative;
