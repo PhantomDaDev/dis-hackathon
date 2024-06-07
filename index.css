@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
 
+<nav>
+  <a href="#" class="hover-left">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#" class="hover-right">Contact</a>
+</nav>
+
+
 :root {
   --background-color: #000;
   --text-color: #fff;
