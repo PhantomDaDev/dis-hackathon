@@ -40,7 +40,7 @@ body {
 
 .content {
   font-size: 86px;
-  text-align:center;
+  text-align: center;
   margin: 10px;
   font-weight: 400;
 }
@@ -59,12 +59,12 @@ nav {
   width: 1200px; /* Increase the width */
   margin: 50px auto 0 auto;
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
 nav a {
   color: var(--link-color);
-  text-align:center;
+  text-align: center;
   padding: 20px 30px; /* Increase the padding for bigger buttons */
   text-decoration: none;
   position: relative;
@@ -109,7 +109,6 @@ nav a:hover::after {
   transition-delay: 0.25s; 
 }
 
-
 .about {
   text-align: right;
   text-justify: inter-word;
@@ -118,18 +117,17 @@ nav a:hover::after {
 .create {
   background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .grad {
   background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Your existing CSS styles... */
-
-/* Customize button appearance */
 button#toggle-mode {
   font-size: 24px; /* Adjust size as needed */
   background: none;
@@ -137,11 +135,35 @@ button#toggle-mode {
   cursor: pointer;
   padding: 0;
 }
-.fade-in {
-  opacity: 0;
+
+.btn {
+  background-color: #000; /* Black background */
+  border: 2px solid #fff; /* White border */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-family: 'JetBrains Mono';
+  font-size: 20px;
 }
 
+.btn-container {
+  height: 200px;
+  position: relative;
+}
 
-
-
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
