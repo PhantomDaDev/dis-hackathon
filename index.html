@@ -1,67 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-<meta charset="UTF-8" />
+
+<head>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dunes Hackathon</title>
   <link rel="stylesheet" href="index.css" />
+</head>
 
-     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dunes Hackathon</title>
-    <link rel="stylesheet" href="index.css" />
+<body>
+  <nav>
+    <a href="">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <button id="toggle-mode" aria-label="Toggle Light/Dark Mode" title="Toggle Light/Dark Mode">☀️</button>
+  </nav>
+  <br /><br />
+  <br /><br />
+  <h1 class="content grad">Dunes' Hackathon</h1>
+  <h3 style="text-align:center">The drive to <span class="create" >create</span></h3>
 
-    
-  </head>
-  <body>
-    <nav>
-      <a href="">Home</a>
-      <a href="#about">About</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
+  <div class="btn-container"><button class="btn center" onclick="window.location.href='#about'">Explore</button></div>
+  <br>
 
+  <script>
+    const toggleButton = document.getElementById("toggle-mode");
+    toggleButton.addEventListener("click", () => {
+      document.body.classList.toggle("light-mode");
+      toggleButton.textContent = document.body.classList.contains("light-mode") ? "🌙" : "☀️";
+    });
+  </script>
 
-      
-      <button id="toggle-mode" aria-label="Toggle Light/Dark Mode" title="Toggle Light/Dark Mode">☀️</button>
-    </nav>
-    <br /><br />
-    <br /><br />
-    <h1 class="content grad">Dunes' Hackathon</h1>
-    <h3 style="text-align:center">The drive to <span class="create"center">create</span></h3>
-    <br /><br /><br /><br /><br /><br />
-    
-    <button class="btn">Explore</button>
-    <br><br><br>
- 
- 
-    <script>
-      const toggleButton = document.getElementById("toggle-mode");
-      toggleButton.addEventListener("click", () => {
-        document.body.classList.toggle("light-mode");
-        toggleButton.textContent = document.body.classList.contains("light-mode") ? "🌙" : "☀️";
-      });
+  <h1 class="content grad" id="about">About</h1>
+  <div style="text-align:center">
+    <p class="about">
+      <br> Dunes International School Hackathon Competition </br>
+      <br> is an opportunity for every student across Abu Dhabi to showcase their </br>
+      <br> talent in coding and designing. Not only that, it is also a place where </br>
+      <br> students can meet like-minded individuals and interact with other people. </br>
+    </p>
+  </div>
 
-      
-    </script>
+  <h1 class="content grad" id="gallery">Gallery</h1>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr5OzNJPX4D-IiN_2SVkoN2JDyxnTEv22tVw&s">
+</body>
 
-    <h1 class="content grad" id="about">About</h1>
-<div style="text-align:center">    
-<p class="about">
-  
- <br> Dunes International School Hackathon Competition </br>
- <br> is an opportunity for every student across Abu Dhabi to showcase their </br>
- <br> talent in coding and designing. Not only that, it is also a place where </br>
- <br> students can meet like-minded individuals and interact with other people. </br>
-  
-
-</p>
-
-</div>
-
-<h1 class="content grad" id="gallery">Gallery</h1>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr5OzNJPX4D-IiN_2SVkoN2JDyxnTEv22tVw&s">
-
-    
-  </body>
 </html>
+
 
