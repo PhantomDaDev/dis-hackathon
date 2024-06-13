@@ -11,20 +11,96 @@
 </head>
 
 <body>
-  <nav>
-    <a href="">Home</a>
-    <a href="#about">About</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-    <button id="toggle-mode" aria-label="Toggle Light/Dark Mode" title="Toggle Light/Dark Mode">☀️</button>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Dunes Hackathon</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" style="align-items: center;">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button id="toggle-mode" class="btn btn-outline-light" aria-label="Toggle Light/Dark Mode" title="Toggle Light/Dark Mode">☀️</button>
+      </div>
+    </div>
   </nav>
-  <br /><br />
-  <br /><br />
-  <h1 class="content grad">Dunes' Hackathon</h1>
-  <h3 style="text-align:center">The drive to <span class="create">create</span></h3>
 
-  <div class="btn-container"><button class="btn center" onclick="window.location.href='#about'">Explore</button></div>
-  <br>
+  <header class="text-center my-5">
+    <h1 class="content grad">Dunes' Hackathon</h1>
+    <h3 style="text-align: center;">The drive to <span class="create">create</span></h3>
+    <div class="d-flex justify-content-center my-4">
+      <button class="btn btn-dark btn-lg" onclick="window.location.href='#about'" style="border-radius: 100px;">Explore</button>
+    </div>
+  </header>
+
+  <section id="about" class="container text-center my-5">
+    <h1 class="content grad">About</h1>
+    <p class="about">
+      Dunes International School Hackathon Competition is an opportunity for every student across Abu Dhabi to showcase their talent in coding and designing. Not only that, it is also a place where students can meet like-minded individuals and interact with other people.
+    </p>
+  </section>
+
+  <section id="gallery" class="container my-5">
+    <h1 class="content grad text-center">Gallery</h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="pics/20230924_093247.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="pics/20230924_093251.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="pics/20230924_093257.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="pics/20230924_093240.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="pics/20230924_093234.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <h1 class="content grad text-center">Innovations Made At the Hackathon</h1>
+    <div class="card mx-auto" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </section>
 
   <script>
     const toggleButton = document.getElementById("toggle-mode");
@@ -34,65 +110,11 @@
     });
   </script>
 
-  <h1 class="content grad" id="about">About</h1>
-  <div style="text-align:center">
-    <p class="about">
-      <br> Dunes International School Hackathon Competition </br>
-      <br> is an opportunity for every student across Abu Dhabi to showcase their </br>
-      <br> talent in coding and designing. Not only that, it is also a place where </br>
-      <br> students can meet like-minded individuals and interact with other people. </br>
-    </p>
-  </div>
-
-  <h1 class="content grad" id="gallery">Gallery</h1>
-
-  <div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="pics/20230924_093247.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="pics/20230924_093251.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="pics/20230924_093257.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="pics/20230924_093240.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="pics/20230924_093234.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  <br><br><br><br>
-  <h1 class="content grad">Innovations Made At the Hackathon</h1>
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">EduSparkX</h5>
-      <p class="card-text">An SDG-aligned versatile interactive eductional app designed for students make learning interactive, fun, and easy</p>
-      <a href="https://gitdpro.github.io/EduSparkX.io/index.html" class="btn btn-primary">Take me there!</a>
-    </div>
-  </div>
-  <script src="scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
+
 
 
 
