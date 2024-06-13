@@ -1,201 +1,254 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
 
-    html {
-      scroll-behavior: smooth;
-    }
+html {
+  scroll-behavior: smooth;
+}
 
-    :root {
-      --background-color: #000;
-      --text-color: #fff;
-      --nav-background-color: #222;
-      --link-color: #fff;
-      --gradient-start: #ff00ff;
-      --gradient-end: #00a6ff;
-    }
+:root {
+  --background-color: #000;
+  --text-color: #fff;
+  --nav-background-color: #222;
+  --link-color: #fff;
+  --gradient-start: #ff00ff;
+  --gradient-end: #00a6ff;
+}
 
-    body.light-mode {
-      --background-color: #fff;
-      --text-color: #000;
-      --nav-background-color: #ddd;
-      --link-color: #000;
-      --gradient-start: #ff00ff;
-      --gradient-end: #00a6ff;
-    }
+body.light-mode {
+  --background-color: #fff;
+  --text-color: #000;
+  --nav-background-color: #ddd;
+  --link-color: #000;
+  --gradient-start: #ff00ff;
+  --gradient-end: #00a6ff;
+}
 
-    body {
-      font-family: 'JetBrains Mono', monospace;
-      margin-left: 100px;
-      margin-right: 100px;
-      padding: 0;
-      background-color: var(--background-color);
-      color: var(--text-color);
-    }
+body {
+  font-family: 'JetBrains Mono', monospace;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
 
-    .jetbrains-mono-400 {
-      font-family: "JetBrains Mono", monospace;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
-    }
+.custom-navbar {
+  background-color: var(--nav-background-color);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    .content {
-      font-size: 86px;
-      text-align: center;
-      margin: 10px;
-      font-weight: 400;
-    }
+.custom-navbar .brand {
+  color: var(--link-color);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
 
-    h3 {
-      text-align: left;
-      margin: 10px;
-      font-weight: 400;
-      font-size: 60px;
-    }
+.custom-navbar .navbar-toggler {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--link-color);
+  cursor: pointer;
+}
 
-    nav {
-      background-color: var(--nav-background-color);
-      overflow: hidden;
-      border-radius: 1000px;
-      width: 1200px;
-      margin: 50px auto 0 auto;
-      display: flex;
-      justify-content: center;
-    }
+.custom-navbar .navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
-    nav a {
-      color: var(--link-color);
-      text-align: center;
-      padding: 20px 30px;
-      text-decoration: none;
-      position: relative;
-    }
+.custom-navbar .navbar-links a {
+  color: var(--link-color);
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+}
 
-    nav a:target {
-      border-bottom: 2px solid var(--link-color);
-      font-weight: bold;
-    }
+.custom-navbar .navbar-links a:hover {
+  color: var(--gradient-start);
+}
 
-    nav a::after,
-    nav a::before {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: 0;
-      left: 50%;
-      background-color: var(--link-color);
-      transition: width 0.25s ease-out, left 0.25s ease-out;
-    }
+.custom-navbar .navbar-links.active {
+  display: block;
+}
 
-    nav a:hover::after,
-    nav a:hover::before {
-      left: 0;
-      width: 100%;
-    }
+.custom-navbar #toggle-mode {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--link-color);
+  font-size: 1.5rem;
+}
 
-    nav a:hover::after {
-      transition-delay: 0.25s;
-    }
+.content {
+  font-size: calc(2.5rem + 2.5vw);
+  text-align: center;
+  margin: 10px;
+  font-weight: 400;
+}
 
-    .about {
-      text-align: right;
-      text-justify: inter-word;
-    }
+h3 {
+  text-align: left;
+  margin: 10px;
+  font-weight: 400;
+  font-size: calc(1.5rem + 1.5vw);
+}
 
-    .create,
-    .grad {
-      background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+.about {
+  font-size: 1.25rem;
+  text-align: left;
+}
 
-    button#toggle-mode {
-      font-size: 24px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 0;
-    }
+.create,
+.grad {
+  background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-    .btn {
-      background-color: #000;
-      border: 2px solid #fff;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      border-radius: 100px;
-      align-items: center;
-      justify-content: center;
-      font-family: 'JetBrains Mono';
-      font-size: 20px;
-    }
+.carousel-inner img {
+  height: auto;
+  width: 100%;
+}
 
-    .btn-container {
-      height: 200px;
-      position: relative;
-    }
+.card {
+  margin: 0 auto;
+}
 
-    .center {
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-    }
+@media (max-width: 768px) {
+  .custom-navbar .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px 0;
-      display: flex;
-      justify-content: center;
-    }
+  .custom-navbar .navbar-toggler {
+    display: block;
+  }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 10px;
-      padding: 10px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+  .custom-navbar .navbar-links.active {
+    display: flex;
+  }
 
-    .gallery img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 8px;
-    }
+  .content {
+    font-size: 2rem;
+  }
 
-    #lightbox {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s, visibility 0.3s;
-    }
+  h3 {
+    text-align: center;
+  }
 
-    #lightbox.active {
-      opacity: 1;
-      visibility: visible;
-    }
+  .about {
+    text-align: center;
+  }
+}
 
-    #lightbox img {
-      max-width: 90%;
-      max-height: 80%;
-      border-radius: 8px;
-    }
+:root {
+  --nav-background-color: #333;
+  --link-color: #fff;
+}
+
+
+
+nav {
+  background-color: var(--nav-background-color);
+  overflow: hidden;
+  border-radius: 1000px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav a {
+  color: var(--link-color);
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a:target {
+  border-bottom: 2px solid var(--link-color);
+  font-weight: bold;
+}
+
+nav a::after,
+nav a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--link-color);
+  transition: width 0.25s ease-out, left 0.25s ease-out;
+}
+
+nav a:hover::after,
+nav a:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+nav a:hover::after {
+  transition-delay: 0.25s;
+}
+
+#toggle-mode {
+  background: none;
+  border: none;
+  color: var(--link-color);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--link-color);
+  background: none;
+  border: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links a {
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
+
+.show {
+  display: flex;
+}
+
