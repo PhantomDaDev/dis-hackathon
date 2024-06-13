@@ -24,7 +24,7 @@ body.light-mode {
 
 body {
   font-family: 'JetBrains Mono', monospace;
-  margin: 0;
+  margin: 0 auto; 
   padding: 0;
   background-color: var(--background-color);
   color: var(--text-color);
@@ -36,6 +36,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
 }
 
 .custom-navbar .brand {
