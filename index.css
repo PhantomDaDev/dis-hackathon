@@ -43,7 +43,6 @@ body {
   max-width: 1200px;
   margin: 0 auto; /* Center horizontally */
   padding: 20px 0;
-  display: flex;
   justify-content: center;
   align-items: center; /* Center vertically */
 }
