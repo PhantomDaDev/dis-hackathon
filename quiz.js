@@ -2,6 +2,7 @@
 //work in progreesss
 //You can ONLY edit code from QUIZ DATA ARRAY not ANYTHING else!
 //While adding QUIZ data follow the format!
+// Made by criston
 const quizData = [
   {
     question: "What would be the result of 3+2+'7'?",
