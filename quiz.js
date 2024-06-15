@@ -23,7 +23,7 @@ function makeQuestion() {
   const question = quizData[currentQuestion];
   questionDiv.innerText = question.question;
 
-  questionDiv.innerHTML = "";
+  optionsDiv.innerHTML = "";
   question.options.forEach((option) => {
     const button = document.createElement("element");
     button.innerText = option;
