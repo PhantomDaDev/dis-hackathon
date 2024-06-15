@@ -272,16 +272,15 @@
     </footer>
 
     <script>
-      const toggleButton = document.getElementById("toggle-mode");
-      toggleButton.addEventListener("click", () => {
+        const toggleButton = document.getElementById("toggle-mode");
+        toggleButton.addEventListener("click", () => {
         document.body.classList.toggle("light-mode");
-        toggleButton.textContent = document.body.classList.contains(
-          "light-mode"
-        )
-          ? <i class="fa-regular fa-moon"></i>
-          : <i class="fa-solid fa-sun"></i>;
-      });
+        toggleButton.innerHTML = document.body.classList.contains("light-mode")
+          ? '<i class="fa-regular fa-moon"></i>'
+          : '<i class="fa-solid fa-sun"></i>';
+        });
     </script>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
