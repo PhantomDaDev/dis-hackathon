@@ -1,23 +1,28 @@
-
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Quiz -Dunes Hackathon</title>
-    </head>
-    <body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz -Dunes Hackathon</title>
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>Test your knowledge!</h1>
+      <p>JAVASCRIPT QUESTIONS</p>
+      <div id="resultDiv"></div>
       <div id="quize">
-        <h1>Test your knowlege!</h1>
-        <p>Question</p>
-        <div id="questions">w</div>
-
-        <div id="options">w</div>
-        <button id="submit">w</button>
-        <button id="next"></button>
+        <div id="questions"></div>
+        <div id="options"></div>
+        <div id="reason"></div>
       </div>
-
-      <script src="quiz.js"></script>
-    </body>
-  </html>
+      <div style="display: none"><button id="next">Next</button></div>
+      <div style="display: flex" class="again">
+        <button id="redo" hidden>Try Again</button>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="quiz.js"></script>
+  </body>
 </html>
