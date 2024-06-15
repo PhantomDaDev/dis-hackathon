@@ -25,7 +25,7 @@ function makeQuestion() {
 
   optionsDiv.innerHTML = "";
   question.options.forEach((option) => {
-    const button = document.createElement("element");
+    const button = document.createElement("button");
     button.innerText = option;
     optionsDiv.appendChild(button);
     button.addEventListener("click", selectAnswer);
