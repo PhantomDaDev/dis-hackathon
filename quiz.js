@@ -4,11 +4,7 @@
 // 60% done only due to bug in vs code
 
 
-if (typeof document !== "undefined") {
-  let element = document.querySelector(".class-name");
 
-  // Manipulating the DOM here
-}
 const quizData = [
   {
     question: "What would be the result of 3+2+”7″? ",
