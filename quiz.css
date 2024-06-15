@@ -5,7 +5,10 @@
   text-align: center;
   align-items: center;
 }
-
+main{
+  text-align: center;
+  align-self: center;
+}
 h1 {
   color: rgb(255, 0, 0);
 }
