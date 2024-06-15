@@ -4,7 +4,8 @@
 // 60% done only due to bug in vs code
 
 
-
+//you can add questions here using same format
+//JS QUIZ
 const quizData = [
   {
     question: "What would be the result of 3+2+”7″? ",
