@@ -58,7 +58,7 @@
             aria-label="Toggle Light/Dark Mode"
             title="Toggle Light/Dark Mode"
           >
-            ☀️
+            <i class="fa-solid fa-sun"></i>
           </button>
         </div>
       </div>
@@ -278,8 +278,8 @@
         toggleButton.textContent = document.body.classList.contains(
           "light-mode"
         )
-          ? "🌙"
-          : "☀️";
+          ? "<i class="fa-regular fa-moon"></i>"
+          : "☀<i class="fa-solid fa-sun"></i>";
       });
     </script>
 
