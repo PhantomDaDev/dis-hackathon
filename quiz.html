@@ -5,8 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz -Dunes Hackathon</title>
     <link rel="stylesheet" href="quiz.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Dunes Hackathon</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarNav"
+          style="align-items: center"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button
+            id="toggle-mode"
+            class="btn btn-outline-light"
+            aria-label="Toggle Light/Dark Mode"
+            title="Toggle Light/Dark Mode"
+          >
+            ☀️
+          </button>
+        </div>
+      </div>
+    </nav>
     <header></header>
     <main>
       <h1>Test your knowledge!</h1>
@@ -22,7 +67,66 @@
         <button id="redo" hidden>Try Again</button>
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h2>Dunes Hackathon</h2>
+          </div>
+          <div class="col-md-3">
+            <h5>About Us</h5>
+            <p>
+              Dunes Hackathon is a great place to showcase coding talents,
+              digital competency, and meet like-minded individuals
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5>Contact Us</h5>
+            <ul class="list-unstyled">
+              <li>Email: info@dunesinternationalschool.com</li>
+              <li>Phone: +971 2 5527527</li>
+              <li>Address: Plot 19, Sector 9, Musaffah, Abu Dhabi, UAE</li>
+              <li><br /></li>
+              <li>Made by:</li>
+              <li>Mohamed Shahaan</li>
+              <li>Pragalbh Hinge</li>
+              <li>Criston Rodrigues</li>
+              <li>Sarvesh Kore of Grade 8A (2024-25)</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Follow Us</h5>
+            <ul class="list-inline footer-links">
+              <li class="list-inline-item">
+                <a
+                  href="https://www.facebook.com/DunesInternationalSchoolAbuDhabi/"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/disabudhabi/">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-md-6 text-end">
+            <ul class="list-inline footer-links">
+              <li class="list-inline-item">
+                <a href="https://dunesinternationalschool.com"
+                  >Dunes International School Website</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="quiz.js"></script>
   </body>
 </html>
+
