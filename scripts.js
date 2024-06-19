@@ -44,19 +44,19 @@ document.addEventListener('DOMContentLoaded', function () {
     var closeButton = document.getElementById('popup-close');
     var overlay = document.getElementById('overlay');
 
-    // Open popup
+    
     triggerButton.addEventListener('click', function () {
         popupContainer.style.display = 'block';
         overlay.style.display = 'block';
     });
 
-    // Close popup
+    
     closeButton.addEventListener('click', function () {
         popupContainer.style.display = 'none';
         overlay.style.display = 'none';
     });
 
-    // Close popup when overlay is clicked
+    
     overlay.addEventListener('click', function () {
         popupContainer.style.display = 'none';
         overlay.style.display = 'none';
