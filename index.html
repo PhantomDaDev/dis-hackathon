@@ -74,7 +74,7 @@
             <i class="fas fa-volume-up"></i> Sound On
           </button>
           <audio id="audio" loop aria-label="Music On/Off">
-            <source src="music(1).mp3" type="audio/mp3">
+            <source src="dis-hackathob/vids/music(1).mp3" type="audio/mp3">
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -305,11 +305,11 @@
         button.addEventListener('click', () => {
             if (audio.paused) {
                 audio.play();
-                button.innerHTML = '<i class="fas fa-volume-mute"></i> Sound Off';
+                button.innerHTML = '<i class="fas fa-volume-mute"></i> Sound On';
                 button.classList.add('off');
             } else {
                 audio.pause();
-                button.innerHTML = '<i class="fas fa-volume-up"></i> Sound On';
+                button.innerHTML = '<i class="fas fa-volume-up"></i> Sound Off';
                 button.classList.remove('off');
             }
         });
