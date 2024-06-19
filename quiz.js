@@ -104,7 +104,7 @@ function selectAnswer(e) {
     nextQuestion("correct");
   } else {
     reasonDiv.innerHTML = `Wrong! ${quizData[currentQuestion].reason}`;
-     document.getElementById('cScore').innerText = `${score}/${quizData.length}`
+    document.getElementById('cScore').innerText = `${score}/${quizData.length}`
     nextQuestion("wrong");
   }
 
