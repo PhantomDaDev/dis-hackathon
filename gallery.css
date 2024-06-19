@@ -104,7 +104,6 @@ h3 {
 .create,
 .grad {
   background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
-  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -252,3 +251,6 @@ nav a:hover::after {
   display: flex;
 }
 
+.highlight {
+  background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
+}
