@@ -20,21 +20,45 @@ document.addEventListener('DOMContentLoaded', function () {
         lightbox.classList.remove('active');
     }
 
-    // Show the clicked image
+    
     images.forEach((image, index) => {
         image.addEventListener('click', () => {
             showImage(index);
         });
     });
 
-    // Hide lightbox when clicked outside the image
+    e
     lightbox.addEventListener('click', () => {
         hideLightbox();
     });
 
-    // Automatically cycle through images
     setInterval(() => {
         currentIndex = (currentIndex + 1) % images.length;
         showImage(currentIndex);
-    }, 3000); // Change 3000 to adjust slide duration in milliseconds
+    }, 3000); 
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var triggerButton = document.getElementById('popup-trigger');
+    var popupContainer = document.getElementById('popup-container');
+    var closeButton = document.getElementById('popup-close');
+    var overlay = document.getElementById('overlay');
+
+    // Open popup
+    triggerButton.addEventListener('click', function () {
+        popupContainer.style.display = 'block';
+        overlay.style.display = 'block';
+    });
+
+    // Close popup
+    closeButton.addEventListener('click', function () {
+        popupContainer.style.display = 'none';
+        overlay.style.display = 'none';
+    });
+
+    // Close popup when overlay is clicked
+    overlay.addEventListener('click', function () {
+        popupContainer.style.display = 'none';
+        overlay.style.display = 'none';
+    });
 });
