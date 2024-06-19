@@ -3,6 +3,38 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes neon-border {
+    0% {
+        box-shadow: 0 0 10px 0 rgba(145, 0, 255, 0.7); /* Initial shadow (purple neon) */
+        transform: rotate(0deg); /* Start from 0 degrees rotation */
+    }
+    100% {
+        box-shadow: 0 0 10px 10px rgba(145, 0, 255, 0); /* Maximum spread with no shadow */
+        transform: rotate(360deg); /* Rotate 360 degrees */
+    }
+}
+
+/* Apply the animation to the nav-link class */
+.nav-link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Text color */
+    padding: 5px 10px; /* Padding for the link */
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid transparent; /* Transparent border */
+    border-radius: 5px; /* Rounded corners */
+    animation: neon-border 2s infinite linear; /* Apply the animation */
+}
+
 :root {
   --background-color: #000;
   --text-color: #fff;
