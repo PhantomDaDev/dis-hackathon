@@ -73,6 +73,13 @@
           >
             <i class="fa-solid fa-sun"></i>
           </button>
+          <button class="button" id="soundButton">
+            <i class="fas fa-volume-up"></i> Sound On
+          </button>
+          <audio id="audio" loop>
+            <source src="your-audio-file.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
         </div>
       </div>
     </nav>
@@ -293,6 +300,22 @@
           ? '<i class="fa-regular fa-moon" style="color: #fff"></i>'
           : '<i class="fa-solid fa-sun"></i>';
       });
+
+      const button = document.getElementById('soundButton');
+        const audio = document.getElementById('audio');
+        const icon = button.querySelector('i');
+
+        button.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                button.innerHTML = '<i class="fas fa-volume-mute"></i> Sound Off';
+                button.classList.add('off');
+            } else {
+                audio.pause();
+                button.innerHTML = '<i class="fas fa-volume-up"></i> Sound On';
+                button.classList.remove('off');
+            }
+        });
     </script>
 
     <script
