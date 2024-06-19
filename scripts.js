@@ -39,24 +39,21 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    var triggerButton = document.getElementById('popup-trigger');
     var popupContainer = document.getElementById('popup-container');
     var closeButton = document.getElementById('popup-close');
     var overlay = document.getElementById('overlay');
 
-    
-    triggerButton.addEventListener('click', function () {
-        popupContainer.style.display = 'block';
-        overlay.style.display = 'block';
-    });
+    // Show popup and overlay when page loads
+    popupContainer.style.display = 'block';
+    overlay.style.display = 'block';
 
-    
+    // Close popup
     closeButton.addEventListener('click', function () {
         popupContainer.style.display = 'none';
         overlay.style.display = 'none';
     });
 
-    
+    // Close popup when overlay is clicked
     overlay.addEventListener('click', function () {
         popupContainer.style.display = 'none';
         overlay.style.display = 'none';
