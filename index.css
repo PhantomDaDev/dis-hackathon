@@ -228,7 +228,7 @@ nav a:hover::after {
 
 .nav-links {
   display: flex;
-  justify-content: center;
+  text-align: center;
   flex-grow: 1;
 }
 
