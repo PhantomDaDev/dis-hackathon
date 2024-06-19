@@ -282,3 +282,9 @@ nav a:hover::after {
     font-size: 40px; 
   }
 }
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    border-radius: 25px;
+  }
+}
