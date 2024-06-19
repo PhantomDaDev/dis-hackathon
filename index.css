@@ -288,3 +288,22 @@ nav a:hover::after {
     border-radius: 25px;
   }
 }
+
+
+
+.sound {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sound.off {
+    background-color: #f44336;
+}
