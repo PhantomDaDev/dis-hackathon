@@ -38,24 +38,3 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 3000); 
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    var popupContainer = document.getElementById('popup-container');
-    var closeButton = document.getElementById('popup-close');
-    var overlay = document.getElementById('overlay');
-
-    // Show popup and overlay when page loads
-    popupContainer.style.display = 'block';
-    overlay.style.display = 'block';
-
-    // Close popup
-    closeButton.addEventListener('click', function () {
-        popupContainer.style.display = 'none';
-        overlay.style.display = 'none';
-    });
-
-    // Close popup when overlay is clicked
-    overlay.addEventListener('click', function () {
-        popupContainer.style.display = 'none';
-        overlay.style.display = 'none';
-    });
-});
