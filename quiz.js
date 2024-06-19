@@ -99,6 +99,8 @@ function selectAnswer(e) {
 
   if (selectedButton.innerText === answer) {
     score++;
+    document.getElementById('cScore').innerText = `${score}/${quizData.length}`
+    
     nextQuestion("correct");
   } else {
     reasonDiv.innerHTML = `Wrong! ${quizData[currentQuestion].reason}`;
