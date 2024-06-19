@@ -16,26 +16,26 @@ html {
 
 .nav-link {
     position: relative; 
-    color: #fff; 
+    color: #fff;
     text-decoration: none; 
+    display: inline-block; t
     padding: 5px 10px; 
-    display: inline-block;
 }
 
 
 .register-link::before {
     content: '';
     position: absolute; 
-    top: -2px; 
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: calc(100% + 4px); 
+    height: calc(100% + 4px); 
     border: 2px solid transparent; 
     border-radius: 50%; 
     animation: neon-border 2s infinite linear; 
-    box-shadow: 0 0 10px 0 rgba(145, 0, 255, 0.7); 
+    box-shadow: 0 0 10px 0 rgba(145, 0, 255, 0.7);
 }
-
 
 :root {
   --background-color: #000;
