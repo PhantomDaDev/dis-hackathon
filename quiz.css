@@ -90,3 +90,25 @@ h2 {
   width: 100%;
   height: 100px;
 }
+
+
+
+
+#options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+/* Style for each quiz option */
+#options .option {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+
+#options .option:hover {
+  background-color: #f0f0f0; 
+}
