@@ -19,70 +19,75 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="index.css" />
+
+   <style>
+
+    @media (max-width: 991.98px) {
+    #navbar.collapsed {
+      border-radius: 25px;
+    }
+}
+
+   </style>
   </head>
   
 
   
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Dunes Hackathon</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse"
-          id="navbarNav"
-          style="align-items: center"
-        >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#footer">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="quiz.html">Quiz</a>
-            </li>
-            
-             <li class="nav-item">
-            <a class="nav-link register-link" href="https://prettyform.addxt.com/a/form/?vf=1FAIpQLSeGERJlxhxsUP9xJNeh5r7CEp_QDDlDarFc95Phizztv2cxRA" target="_blank">Register</a>
-            </li>
-
-          </ul>
-          <button
-            id="toggle-mode"
-            class="btn btn-outline-light"
-            aria-label="Toggle Light/Dark Mode"
-            title="Toggle Light/Dark Mode"
-          >
-            <i class="fa-solid fa-sun"></i>
-          </button>
-          <button class="sound" id="soundButton">
-            <i class="fas fa-volume-up"></i> Sound On
-          </button>
-          <audio loop id="music" src="music.mp3" preload="auto">
-          </audio>
-        
-          </audio>
-        </div>
-      </div>
-    </nav>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Dunes Hackathon</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse"
+      id="navbarNav"
+      style="align-items: center"
+    >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="quiz.html">Quiz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link register-link" href="https://prettyform.addxt.com/a/form/?vf=1FAIpQLSeGERJlxhxsUP9xJNeh5r7CEp_QDDlDarFc95Phizztv2cxRA" target="_blank">Register</a>
+        </li>
+      </ul>
+      <button
+        id="toggle-mode"
+        class="btn btn-outline-light"
+        aria-label="Toggle Light/Dark Mode"
+        title="Toggle Light/Dark Mode"
+      >
+        <i class="fa-solid fa-sun"></i>
+      </button>
+      <button class="sound" id="soundButton">
+        <i class="fas fa-volume-up"></i> Sound On
+      </button>
+      <audio loop id="music" src="music.mp3" preload="auto"></audio>
+    </div>
+  </div>
+</nav>
 
     <header class="text-center my-5">
       <h1 class="content grad">Dunes' Hackathon</h1>
@@ -318,6 +323,22 @@
                 button.classList.remove('off');
             }
         });
+
+     document.addEventListener("DOMContentLoaded", function () {
+  var navbar = document.getElementById('navbar');
+  var navbarCollapse = document.getElementById('navbarNav');
+
+  // Event listener for when the collapse transition ends
+  navbarCollapse.addEventListener('hidden.bs.collapse', function () {
+    navbar.classList.add('collapsed');
+  });
+
+  // Event listener for when the collapse transition starts
+  navbarCollapse.addEventListener('shown.bs.collapse', function () {
+    navbar.classList.remove('collapsed');
+  });
+});
+
     </script>
 
     <script
