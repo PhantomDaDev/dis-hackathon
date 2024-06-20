@@ -57,6 +57,7 @@ h2 {
   animation-name: example;
   animation-duration: 10s;
   animation-iteration-count: infinite;
+  transition: transform 0.3s ease;
 }
 
 #options button:hover {
