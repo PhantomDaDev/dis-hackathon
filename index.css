@@ -307,3 +307,7 @@ nav a:hover::after {
 .sound.off {
     background-color: #f44336;
 }
+
+.container-fluid {
+  border-radius: 25px;
+}
