@@ -92,23 +92,44 @@ h2 {
 }
 
 
-
-
 #options {
   display: flex;
   flex-direction: column;
-  gap: 10px; 
+  gap: 10px;
 }
 
-/* Style for each quiz option */
+
 #options .option {
   padding: 10px;
   border: 1px solid #ccc;
   cursor: pointer;
-  transition: background-color 0.3s ease; 
+  position: relative; 
 }
 
 
-#options .option:hover {
-  background-color: #f0f0f0; 
+#options .option::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(240, 240, 240, 0); 
+  transition: background-color 0.3s ease; 
+  z-index: -1; 
+}
+
+#options .option:hover::before {
+  background-color: rgba(240, 240, 240, 0.7); 
+  animation: scaleIn 0.3s ease forwards;
+}
+
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
