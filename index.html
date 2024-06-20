@@ -310,22 +310,7 @@
           : '<i class="fa-solid fa-sun"></i>';
       });
 
-      const button = document.getElementById('soundButton');
-        const audio = document.getElementById('audio');
-        const icon = button.querySelector('i');
-
-        button.addEventListener('click', () => {
-            if (audio.paused) {
-                audio.play();
-                button.innerHTML = '<i class="fas fa-volume-mute"></i> Sound Off';
-                button.classList.add('off');
-            } else {
-                audio.pause();
-                button.innerHTML = '<i class="fas fa-volume-up"></i> Sound On';
-                button.classList.remove('off');
-            }
-        });
-
+      
      document.addEventListener("DOMContentLoaded", function () {
   var navbar = document.getElementById('navbar');
   var navbarCollapse = document.getElementById('navbarNav');
