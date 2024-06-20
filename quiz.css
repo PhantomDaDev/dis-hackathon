@@ -1,6 +1,11 @@
 // Also where I cook - Shahaan
 // Basic css code coming soon
 // i added a bit of css
+
+body {
+  margin: 10px;
+  padding: 0;
+}
 * {
   text-align: center;
   align-items: center;
