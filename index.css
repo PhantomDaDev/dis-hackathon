@@ -23,7 +23,7 @@ body.light-mode {
 
 body {
   font-family: 'JetBrains Mono', monospace;
-  margin: 0 auto; 
+  margin: 10px; 
   padding: 0;
   background-color: var(--background-color);
   color: var(--text-color);
