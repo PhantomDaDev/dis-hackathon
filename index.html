@@ -20,6 +20,12 @@
     />
     <link rel="stylesheet" href="index.css" />
 
+<link
+      href="https://prod.spline.design/FZMFpaOICuxM5vjW/scene.splinecode"
+      rel="stylesheet"
+      
+    />
+   
    <style>
 
     @media (max-width: 991.98px) {
@@ -112,7 +118,19 @@
     </header>
     <br><br><br><br><br><br><br><br>
 
-    
+import Spline from '@splinetool/react-spline/next';
+
+export default function Home() {
+  return (
+    <main>
+      <Spline
+        scene="https://prod.spline.design/FZMFpaOICuxM5vjW/scene.splinecode" 
+      />
+    </main>
+  );
+}
+
+   
     <section id="gallery" class="container my-5">
       <h1 class="content grad text-center">Gallery</h1>
       <div
