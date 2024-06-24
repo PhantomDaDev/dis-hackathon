@@ -310,3 +310,9 @@ nav a:hover::after {
 .container-fluid {
   border-radius: 25px;
 }
+
+.accordion-header {
+
+color:white
+  
+}
