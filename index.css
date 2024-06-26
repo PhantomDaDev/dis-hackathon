@@ -324,3 +324,8 @@ text-align:center
 .card-title grad {
 text-align:center
 }
+
+.navbar-brand:hover {
+  text-decoration: none;
+}
+
