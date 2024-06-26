@@ -326,6 +326,6 @@ text-align:center
 }
 
 .navbar-brand:hover {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
