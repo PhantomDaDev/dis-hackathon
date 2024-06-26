@@ -325,7 +325,9 @@ text-align:center
 text-align:center
 }
 
-.navbar-brand:hover {
+
+.navbar-dark .navbar-brand:hover {
   text-decoration: none !important;
 }
+
 
