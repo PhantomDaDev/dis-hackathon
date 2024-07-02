@@ -71,6 +71,52 @@
       html, body {
         cursor: url("images-removebg-preview (1).png"), default;
       }
+
+      .div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    padding: 0 20px;
+  }
+  .div-2 {
+    background-color: var(--sds-color-background-disabled-default);
+    align-self: stretch;
+    min-height: 122px;
+    width: 100%;
+  }
+  @media (max-width: 991px) {
+    .div-2 {
+      max-width: 100%;
+    }
+  }
+  .div-3 {
+    background: linear-gradient(90deg, #f0f 0%, #00a6ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 109px;
+    font: 96px JetBrains Mono, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-3 {
+      max-width: 100%;
+      margin-top: 40px;
+      font-size: 40px;
+    }
+  }
+  .div-4 {
+    color: #fff;
+    margin-top: 41px;
+    font: 56px JetBrains Mono, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-4 {
+      max-width: 100%;
+      margin-top: 40px;
+      font-size: 40px;
+    }
+  }
     </style>
   </head>
 
@@ -108,17 +154,14 @@
       </div>
     </nav>
 
-    <header class="text-center my-5">
-      <h1 class="content grad">Dunes' Hackathon</h1>
-      <h3 style="text-align: center">
-        The drive to <span class="create">create</span>
-      </h3>
-      <div class="d-flex justify-content-center my-4">
-        <button class="btn btn-dark btn-lg" onclick="window.location.href='gallery.html'" style="border-radius: 100px">
-          Explore
-        </button>
+    <header>
+      <div class="div">
+        <div class="div-2"></div>
+        <div class="div-3">Dunes Hackathon</div>
+        <div class="div-4">The drive to create</div>
       </div>
     </header>
+
 
     <section class="container my-5">
       <h1 class="content grad text-center">
