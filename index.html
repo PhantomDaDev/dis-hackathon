@@ -1,307 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dunes Hackathon</title>
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="index.css" />
-
-    <style>
-      @media (max-width: 991.98px) {
-        #navbar.collapsed {
-          border-radius: 25px;
-        }
-
-        #navbar.show { 
-          border-redius: 25px;
-        }
-
-        #navbar.collapse { 
-          border-redius: 25px;
-        }
-
-        .navbar-brand:hover,
-        .navbar-brand:focus {
-          text-decoration: none !important;
-        }
-
-        .navbar-dark .navbar-brand:hover,
-        .navbar-dark .navbar-brand:focus {
-          text-decoration: none !important;
-        }
-      }
-
-      .nav-link {
-        position: relative;
-        text-decoration: none;
-      }
-
-      .nav-link::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 2px;
-        bottom: 0;
-        left: 50%;
-        background-color: var(--link-color);
-        transition: width 0.25s ease-out, left 0.25s ease-out;
-      }
-
-      .nav-link:hover::after {
-        left: 0;
-        width: 100%;
-      }
-
-      .no-underline a {
-        text-decoration: none !important;
-      }
-
-      html, body {
-        cursor: url("images-removebg-preview (1).png"), default;
-      }
-
-      .div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 700;
-    padding: 0 20px;
-  }
-
-  .div-3 {
-    background: linear-gradient(90deg, #f0f 0%, #00a6ff 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: 109px;
-    font: 96px JetBrains Mono, sans-serif;
-  }
-  @media (max-width: 991px) {
-    .div-3 {
-      max-width: 100%;
-      margin-top: 40px;
-      font-size: 40px;
-    }
-  }
-  .div-4 {
-    color: #fff;
-    margin-top: 41px;
-    font: 56px JetBrains Mono, sans-serif;
-  }
-  @media (max-width: 991px) {
-    .div-4 {
-      max-width: 100%;
-      margin-top: 40px;
-      font-size: 40px;
-    }
-  }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <div class="no-underline">
-          <a class="navbar-brand" href="#">Dunes Hackathon</a>
-        </div>
-        <button id="toggle-mode" class="btn btn-outline-light" aria-label="Toggle Light/Dark Mode" title="Toggle Light/Dark Mode">
-            <i class="fa-solid fa-sun"></i>
-        </button>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav" style="align-items: center">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#footer">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="quiz.html">Quiz</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <header class="header">
+      <a href="index.html" class="logo">Dunes Hackathon</a>
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+      </label>
 
-    <header>
-      <div class="div">
-        <div class="div-2"></div>
-        <div class="div-3">Dunes Hackathon</div>
-        <div class="div-4">The drive to create</div>
-      </div>
+      <nav class="navbar">
+        <a href="#" style="--i:0;">Home</a>
+        <a href="#" style="--i:1;">About</a>
+        <a href="#" style="--i:2;">Gallery</a>
+        <a href="#" style="--i:3;">Contact</a>
+      </nav>
     </header>
-
-
-    <section class="container my-5">
-      <h1 class="content grad text-center">
-        Dunes Hackathon Through the Years
-      </h1>
-      <div class="card-container" style="display: flex;">
-        <div class="card mx-auto" style="width: 18rem" text-align="center">
-          <div class="card-body">
-            <h5 class="card-title grad">2023</h5>
-            <p class="card-text">
-              v1.0. The first ever Dunes Hackathon
-            </p>
-            <a href="gallery.html" class="btn btn-primary" target=_blank>See 2023's highlights</a>
-          </div>
-        </div>
-        <div class="card mx-auto" style="width: 18rem" text-align="center">
-          <div class="card-body">
-            <h5 class="card-title grad">2024</h5>
-            <p class="card-text">
-              v2.0. A new and improved Hackathon. Coming Soon.
-            </p>
-            <a href="gallery.html" class="btn btn-primary disables" target=_blank>Upcoming</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <h1 style="text-align: center;" class="content grad">FAQ</h1>
-    <div class="accordion" id="accordionPanelsStayOpenExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-            What is Dunes' Hackathon about ?
-          </button>
-        </h2>
-        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-          <div class="accordion-body">
-            Dunes International School Hackathon Competition is an opportunity for every student across Abu Dhabi to showcase their talent in coding and designing. Not only that, it is also a place where students can meet like-minded individuals and interact with other people.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-            How do I participate ?
-          </button>
-        </h2>
-        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-          <div class="accordion-body">
-            Click Register and enter your details and we will get to you shortly.
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr width="100%" style="align-self: center;">
-    <footer class="footer" id="footer">
+    <main>
       <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <h2>Dunes Hackathon</h2>
-          </div>
-          <div class="col-md-3">
-            <h5>About Us</h5>
-            <p>
-              Dunes Hackathon is a great place to showcase coding talents, digital competency, and meet like-minded individuals
-            </p>
-          </div>
-          <div class="col-md-3">
-            <h5>Contact Us</h5>
-            <ul class="list-unstyled">
-              <li>Email: info@dunesinternationalschool.com</li>
-              <li>Phone: +971 2 5527527</li>
-              <li>Address: Plot 19, Sector 9, Musaffah, Abu Dhabi, UAE</li>
-              <li><br></li>
-              <li>Made by:</li>
-              <li><a href="https://github.com/PhantomDaDev" target=_blank>Mohamed Shahaan 8A</a></li>
-              <li><a href="https://github.com/Knight2801Dev" target=_blank>Pragalbh Hinge 8A</a></li>
-              <li><a href="https://github.com/GitDpro" target=_blank>Criston Rodrigues 8A</a></li>
-              <li><a href="https://github.com/ALPHA7105" target=_blank>Sarvesh Kore 8A</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h5>Follow Us</h5>
-            <ul class="list-inline footer-links" target=_blank>
-              <li class="list-inline-item">
-                <a href="https://www.facebook.com/DunesInternationalSchoolAbuDhabi/" target=_blank>
-                  <i class="fa-brands fa-facebook-f fa-bounce" style="color: #4267b2;"></i>
-                </a>
-              </li>
-              <li class="list-inline-item" target=_blank>
-                <a href="https://www.instagram.com/disabudhabi/" target=_blank>
-                  <i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i>
-                </a>
-              </li>
-              <li class="list-inline-item" target=_blank>
-                <a href="https://www.dunesinternationalschool.com/" target=_blank>
-                  <i class="fa-light fa-globe fa-bounce"></i>
-                </a>
-              </li>  
-            </ul>
-          </div>
+        <br><br><br>
+        <h2>Dunes Hackathon</h2>
+        <h1>The drive to <span class="autotype"></span></h1>
+        <button class="btn">Explore</button>
+      </div>
+      <div class="timeline">
+        <div class="timeline-container left-container">
+            <img src="download-removebg-preview (1).png" alt="circle" height="40px">
+            <div class="textbox">
+                <h3>Hackathon 1.0</h2>
+                <small>2023</small>
+                <br>
+                <p>
+                    The first Dunes Hackathon. It was conducted on September 2023
+                </p>
+                <span class="left-container-arrow">
+            
+                </span>
+                <br>
+                <button class="bttn">See 2023 highlights</button>
+            </div>
         </div>
-        <hr />
-        <div class="row">
-          <div class="col-md-6">
-          </div>
-          <div class="col-md-6 text-end">
-            <ul class="list-inline footer-links">
-              <li class="list-inline-item">
-                <a href="https://dunesinternationalschool.com" target=_blank>Dunes International School Website</a>
-              </li>
-            </ul>
-          </div>
+        <div class="timeline-container right-container">
+            <img src="download-removebg-preview (1).png" alt="circle" height="40px">
+            <div class="textbox">
+                <h3>Hackathon 2.0</h2>
+                <small>2024</small>
+                <br>
+                <p>
+                    The second Dunes Hackathon. It is to be conducted on September/October 2024
+                </p>
+                <span class="right-container-arrow"></span>
+            </div>
         </div>
       </div>
-    </footer>
-
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-      const toggleButton = document.getElementById("toggle-mode");
-      toggleButton.addEventListener("click", () => {
-        document.body.classList.toggle("light-mode");
-        toggleButton.innerHTML = document.body.classList.contains("light-mode")
-          ? '<i class="fa-regular fa-moon" style="color: #fff"></i>'
-          : '<i class="fa-solid fa-sun"></i>';
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        var navbar = document.getElementById('navbar');
-        var navbarCollapse = document.getElementById('navbarNav');
-
-        navbarCollapse.addEventListener('hidden.bs.collapse', function () {
-          navbar.classList.add('collapsed');
-        });
-
-        navbarCollapse.addEventListener('shown.bs.collapse', function () {
-          navbar.classList.remove('collapsed');
-        });
+      var typed = new Typed(".autotype", {
+        strings: ['create','innovate', 'develop', 'design', 'win', 'build'],
+        typeSpeed: 150,
+        backSpeed: 300,
+        loop: true,
+        cursorChar: '_',
       });
     </script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
-    <audio autoplay loop>
-      <source src="music.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
   </body>
 </html>
+
