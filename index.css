@@ -96,6 +96,7 @@ body {
 
 .navbar {
   color: #28242c;
+  border-radius: 100px;
 }
 
 .logo {
@@ -145,7 +146,13 @@ h1 {
 h2 {
   font-size: 96px;
   letter-spacing: 9px;
-
+  background: linear-gradient(90deg, #f0f 0%, #00a6ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-reflect: below 0.3rem linear-gradient(transparent, #0004);
+  line-height: 5rem;
+  text-shadow: 0 0 10px #00a6ff;
 }
 
 span {
@@ -210,37 +217,6 @@ span {
   50% {background-position: 400% 0;}
   100% {background-position: 0 0;}
 }
-
-/*this is rainbow glowing transition for heading*/
-.container {
-  text-align: center;
-}
-
-.neon-rainbow {
-  font-size: 4em;
-  position: relative;
-  color: transparent;
-  display: inline-block;
-}
-
-.neon-rainbow::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: transparent;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  mix-blend-mode: overlay;
-  animation: neon-rainbow 3s linear infinite;
-}
-
-@keyframes neon-rainbow {
-  0% { filter: hue-rotate(0deg); }
-  100% { filter: hue-rotate(360deg); }
-}
-
 
 /* hover */
 .btn:hover::before {
@@ -312,7 +288,52 @@ span {
     opacity: 1;
     transition-delay: calc(0.15s * var(--i));
   }
+
+  .memory {
+    font-size: 20px;
+  }
 }
+
+@media (max-width: 600px){
+  
+  .timeline {
+    margin: 50px auto;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+
+  .textbox {
+    font-size: 13px;
+  }
+
+  .textbox small {
+    margin-bottom: 10px;
+  }
+
+  .right-container {
+    left: 0;
+  }
+
+  .left-container img, .right-container img {
+    left: 10px;
+  } 
+
+  .left-container-arrow, .right-container-arrow {
+    border-right: 15px solid #fff;
+    border-left: 0;
+    left: -15px; 
+  }
+}
+
+/* timeline */
 
 .timeline {
   position: relative;
@@ -324,6 +345,26 @@ span {
   padding: 10px 50px;
   position: relative;
   width: 50%;
+  animation: movedown 1s linear forwards;
+  opacity: 0;
+}
+
+
+
+.timeline-container:nth-child(2) {
+  animation-delay: 1s;
+}
+
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .textbox {
@@ -365,6 +406,17 @@ span {
   left: 50%;
   margin-left: -3px;
   z-index: -1;
+  animation: moveline 2s linear forwards;
+}
+
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 100%;
+  }
 }
 
 .textbox h2 {
@@ -418,3 +470,13 @@ span {
   color: white;
 }
 
+.gradient {
+  text-align: center;
+  align-items: center;
+  font-size: 84px;  
+  background: linear-gradient(90deg, #f0f 0%, #00a6ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-reflect: below 0.3rem linear-gradient(transparent, #0004);
+}
