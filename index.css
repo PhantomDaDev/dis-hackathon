@@ -211,18 +211,36 @@ span {
   100% {background-position: 0 0;}
 }
 
-.rainbow-text {
-  background-image: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: rainbow 5s linear infinite;
+/*this is rainbow glowing transition for heading*/
+.container {
+  text-align: center;
 }
 
-@keyframes rainbow {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
+.neon-rainbow {
+  font-size: 4em;
+  position: relative;
+  color: transparent;
+  display: inline-block;
 }
+
+.neon-rainbow::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: transparent;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: overlay;
+  animation: neon-rainbow 3s linear infinite;
+}
+
+@keyframes neon-rainbow {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
 
 /* hover */
 .btn:hover::before {
