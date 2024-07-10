@@ -217,10 +217,23 @@ span {
   100% {background-position: 0 0;}
 }
 
-@keyframes mymove {
-  from {background-color: #ff0000;}
-  to {background-color: #00f6ff;}
+.rainbow-text {
+  font-size: 48px; 
+  font-family: 'JetBrains Mono', monospace; 
+  background: linear-gradient(to right, #ff00e0, #ffac00, #ffea00, #32ff00, #00ffd2, #4c00ff); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 10s linear infinite; 
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5); 
+}
 
+@keyframes rainbow {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }
 
 /* hover */
