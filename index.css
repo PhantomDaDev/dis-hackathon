@@ -145,13 +145,7 @@ h1 {
 h2 {
   font-size: 96px;
   letter-spacing: 9px;
-  background: linear-gradient(90deg, #f0f 0%, #00a6ff 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-box-reflect: below 0.3rem linear-gradient(transparent, #0004);
-  line-height: 5rem;
-  text-shadow: 0 0 10px #00a6ff;
+
 }
 
 span {
