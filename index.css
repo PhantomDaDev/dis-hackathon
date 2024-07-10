@@ -217,6 +217,12 @@ span {
   100% {background-position: 0 0;}
 }
 
+@keyframes mymove {
+  from {background-color: #ff0000;}
+  to {background-color: #00f6ff;}
+
+}
+
 /* hover */
 .btn:hover::before {
   opacity: 1;
