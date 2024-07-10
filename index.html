@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dunes Hackathon</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
   </head>
@@ -19,27 +19,19 @@
 
       <nav class="navbar">
         <a href="#" style="--i:0;">Home</a>
-        <a href="about.html" style="--i:1;">About</a>
-        <a href="gallery.html" style="--i:2;">Gallery</a>
-         <a href="quiz.html" style="--i:2;">Quiz</a> 
-        <a href="footer" style="--i:3;">Contact</a>
+        <a href="#" style="--i:1;">About</a>
+        <a href="#" style="--i:2;">Gallery</a>
+        <a href="#" style="--i:3;">Contact</a>
       </nav>
     </header>
     <main>
       <div class="container">
         <br><br><br>
-          
-       <div class="container">
-        <h2 class="neon-rainbow"> Dunes Hackathon </h2>
-       </div>
-          
-          <br>
-          <br>
-          <br>
-          <br>
+        <h2>Dunes Hackathon</h2>
         <h1>The drive to <span class="autotype"></span></h1>
         <button class="btn">Explore</button>
       </div>
+      <h1 class="jetbrains-mono-semibold gradient memory"></h1>
       <div class="timeline">
         <div class="timeline-container left-container">
             <img src="download-removebg-preview (1).png" alt="circle" height="40px">
@@ -80,7 +72,13 @@
         loop: true,
         cursorChar: '_',
       });
+
+      var memory = new Typed(".memory", {
+        strings: ['↓ DOWN THE MEMORY LANE ↓'],
+        typeSpeed: 50,
+        cursorChar: '_',
+        showCursor: false,
+      });
     </script>
   </body>
 </html>
-
