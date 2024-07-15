@@ -1,120 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dunes Hackathon - Gallery</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="gallery.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Dunes Hackathon</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav" style="align-items: center">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="duneshackathon.vercel.app/#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="duneshackathon.vercel.app/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="duneshackathon.vercel.app/gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="duneshackathon.vercel.app/#footer">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="duneshackathon.vercel.app/quiz.html">Quiz</a>
-            </li>
-          </ul>
-          <button id="toggle-mode" class="btn btn-outline-light" aria-label="Toggle Light/Dark Mode" title="Toggle Light/Dark Mode">
-            <i class="fa-solid fa-sun"></i>
-          </button>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/gallery.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Dunes Hackathon</a>
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <i class='bx bx-x' id="close-icon"></i>
+    </label>
+    <nav class="navbar">
+      <a href="#" style="--i:0;">Home</a>
+      <a href="#" style="--i:1;">About</a>
+      <a href="#" style="--i:2;">Gallery</a>
+      <a href="#" style="--i:3;">Contact</a>
     </nav>
-    
-    <br><br><br><br>
-    <h1 style="text-align: center; font-size: 96px;">2023<span class="highlight">HIGHLIGHTS</span></h1>
-    
-    <br><br><br><br><br>
-    <section id="gallery" class="container my-5">
-      <h1 class="content grad text-center">Gallery</h1>
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="pics/pic13.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="pics/pic14.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="pics/pic15.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="pics/pic16.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="pics/pic17.jpg" class="d-block w-100" alt="...">
-          </div>
-          <!-- Add more carousel items as needed -->
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  </header>
+  <br><br><br><br><br>
+  <h1 style="font-size: 100px; text-align: center;">2023<span class="gradient" style="font-size: 100px;">HIGHLIGHTS</span></h1>
+  <section class="container">
+    <div class="slider-wrapper">
+      <div class="slider">
+        <img id="slide-1" src="pics/pic1.jpg" alt="">
+        <img id="slide-2" src="pics/pic2.jpg" alt="">
+        <img id="slide-3" src="pics/pic3.jpg" alt="">
+        <img id="slide-4" src="pics/pic4.jpg" alt="">
+        <img id="slide-5" src="pics/pic5.jpg" alt="">
+        <img id="slide-6" src="pics/pic6.jpg" alt="">
+        <img id="slide-7" src="pics/pic7.jpg" alt="">
+        <img id="slide-8" src="pics/pic8.jpg" alt="">
+        <img id="slide-9" src="pics/pic9.jpg" alt="">
+        <img id="slide-10" src="pics/pic10.jpg" alt="">
+        <img id="slide-11" src="pics/pic11.jpg" alt="">
+        <img id="slide-12" src="pics/pic12.jpg" alt="">
+        <img id="slide-13" src="pics/pic13.jpg" alt="">
+        <img id="slide-14" src="pics/pic14.jpg" alt="">
+        <img id="slide-15" src="pics/pic15.jpg" alt="">
+        <img id="slide-16" src="pics/pic16.jpg" alt="">
+        <img id="slide-17" src="pics/pic17.jpg" alt="">
       </div>
-    </section>
-    
-    <br><br>
-    <section>
-      <h1 class="grad content">Inspiring Innovations!</h1>
-      <div class="card" style="width: 18rem;">
-        <img src="path/to/your/image1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Winner 1</h5>
-          <p class="card-text">(Project description)</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+      <div class="slider-nav">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+        <a href="#slide-4"></a>
+        <a href="#slide-5"></a>
+        <a href="#slide-6"></a>
+        <a href="#slide-7"></a>
+        <a href="#slide-8"></a>
+        <a href="#slide-9"></a>
+        <a href="#slide-10"></a>
+        <a href="#slide-11"></a>
+        <a href="#slide-12"></a>
+        <a href="#slide-13"></a>
+        <a href="#slide-14"></a>
+        <a href="#slide-15"></a>
+        <a href="#slide-16"></a>
+        <a href="#slide-17"></a>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img src="path/to/your/image2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Winner 2</h5>
-          <p class="card-text">(Project description)</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="path/to/your/image3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Winner 3</h5>
-          <p class="card-text">(Project description)</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </section>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+    </div>
+  </section>
+</body>
 </html>
 
 
