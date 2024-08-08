@@ -3,6 +3,15 @@
 /* <uniquifier>: Use a unique and descriptive class name */
 /* <weight>: Use a value from 100 to 800 */
 
+@font-face {
+  font-family: 'Geist';
+  src: url(Geist-Regular.ttf);
+}
+
+.geist {
+  font-family: 'Geist';
+}
+
 .jetbrains-mono-thin {
   font-family: "JetBrains Mono", monospace;
   font-optical-sizing: auto;
@@ -479,4 +488,167 @@ span {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-box-reflect: below 0.3rem linear-gradient(transparent, #0004);
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to right, #f0f, #00a6ff);
+  color: #fff;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.col:nth-child(2), .col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+.logoo {
+  width: 80px;
+  margin-bottom: 30px;
+  font-size: 54px;
+}
+
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.gmail {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+ul li {
+  list-style-type: none;
+  margin-bottom: 12px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Geist';
+}
+
+form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+form .fa-regular {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+
+form button {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+form button .fa-solid {
+  font-size: 16px;
+  color: #ccc;
+
+}
+
+.social-icons .br {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  margin-right: 15px;
+}
+
+hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+.underline {
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+
+.underline span {
+  width: 15px;
+  height: 100%;
+  background: #Fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    bottom: unset;
+  }
+
+  .col {
+    flex-basis: 100%;
+  }
+
+  .col:nth-child(2), .col:nth-child(3) {
+    flex-basis: 100%;
+  }
+
+  .logoo {
+    font-size: 40px;
+  }
 }
