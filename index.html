@@ -6,6 +6,7 @@
     <title>Dunes Hackathon</title>
     <link rel="stylesheet" href="index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/14260b0478.js" crossorigin="anonymous"></script>
     
   </head>
   <body>
@@ -19,10 +20,9 @@
 
       <nav class="navbar">
         <a href="#" style="--i:0;">Home</a>
-        <a href="about.html" style="--i:1;">About</a>
+        <a href="#" style="--i:1;">About</a>
         <a href="#" style="--i:2;">Gallery</a>
-        <a href="quiz.html" style="--i:2;">Quiz</a>
-        <a href="footer" style="--i:3;">Contact</a>
+        <a href="#" style="--i:3;">Contact</a>
       </nav>
     </header>
     <main>
@@ -37,26 +37,26 @@
         <div class="timeline-container left-container">
             <img src="download-removebg-preview (1).png" alt="circle" height="40px">
             <div class="textbox">
-                <h3>Hackathon 1.0</h2>
-                <small>2023</small>
+                <h3 class="geist">Hackathon 1.0</h2>
+                <small class="geist">2023</small>
                 <br>
-                <p>
+                <p class="geist">
                     The first Dunes Hackathon. It was conducted on September 2023
                 </p>
                 <span class="left-container-arrow">
             
                 </span>
                 <br>
-                <button class="bttn">See 2023 highlights</button>
+                <button class="bttn geist">See 2023 highlights</button>
             </div>
         </div>
         <div class="timeline-container right-container">
             <img src="download-removebg-preview (1).png" alt="circle" height="40px">
             <div class="textbox">
-                <h3>Hackathon 2.0</h2>
-                <small>2024</small>
+                <h3 class="geist">Hackathon 2.0</h2>
+                <small class="geist">2024</small>
                 <br>
-                <p>
+                <p class="geist">
                     The second Dunes Hackathon. It is to be conducted on September/October 2024
                 </p>
                 <span class="right-container-arrow"></span>
@@ -64,6 +64,8 @@
         </div>
       </div>
     </main>
+    <br><br><br><br><br>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed(".autotype", {
@@ -81,5 +83,45 @@
         showCursor: false,
       });
     </script>
-  </body>
-</html>
+        <footer>
+          <div class="row">
+            <div class="col">
+              <h4 class="logoo">Dunes Hackathon</h4>
+              <p class="geist">Dunes Hackathon - a great place to be creative</p>
+            </div>
+            <div class="col">
+              <h3>Contact <div class="underline"><span></span></div></h3>
+              <p class="geist">PO Box 5121</p>
+              <p class="geist">Plot 19, Sector 9</p>
+              <p class="geist">Abu Dhabi</p>
+              <p class="geist gmail"><b>info@dunesinternationalschool.com</b></p>
+
+            </div>
+            <div class="col">
+              <h3>Made By <div class="underline"><span></span></div></h3>
+              <ul>
+                <li>Shahaan</li>
+                <li>Pragalbh</li>
+                <li>Criston</li>
+                <li>Sarvesh</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h3>Register <div class="underline"><span></span></div></h3>
+              <form>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+              </form>
+              <div class="social-icons">
+                <i class="fa-solid fa-globe br"></i>
+                <i class="fa-brands fa-facebook br"></i>
+                <i class="fa-brands fa-instagram br"></i>
+                <i class="fa-brands fa-youtube br"></i>
+              </div>
+            </div>
+          </div>
+          <hr>
+        </footer>
+  
+</body>
