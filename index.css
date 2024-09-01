@@ -8,6 +8,10 @@
   src: url(Geist-Regular.ttf);
 }
 
+html {
+  scroll-behaviour: smooth;
+}
+
 .geist {
   font-family: 'Geist';
 }
