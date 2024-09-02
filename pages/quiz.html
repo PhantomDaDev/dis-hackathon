@@ -21,51 +21,21 @@
     <link rel="stylesheet" href="../styles/quiz.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="www.duneshackathon.vercel.app">Dunes Hackathon</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse"
-          id="navbarNav"
-          style="align-items: center"
-        >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="https://duneshackathon.vercel.app/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://duneshackathon.vercel.app/gallery.html">Galleryt</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://duneshackathon.vercel.app/pages/quiz.html">Quiz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://prettyform.addxt.com/a/form/?vf=1FAIpQLSeGERJlxhxsUP9xJNeh5r7CEp_QDDlDarFc95Phizztv2cxRA">Register</a>
-            </li>
-          </ul>
-          <button
-            id="toggle-mode"
-            class="btn btn-outline-light"
-            aria-label="Toggle Light/Dark Mode"
-            title="Toggle Light/Dark Mode"
-          >
-            ☀️
-          </button>
-        </div>
-      </div>
-    </nav>
-    <header></header>
+    <header class="header">
+      <a href="index.html" class="logo">Dunes Hackathon</a>
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+      </label>
+
+      <nav class="navbar">
+        <a href="index.html" style="--i:0;">Home</a>
+        <a href="gallery.html" style="--i:1;">Gallery</a>
+        <a href="https://duneshackathon.vercel.app/pages/quiz.html" style="--i:2;">Quiz</a>
+        <a href="https://prettyform.addxt.com/a/form/?vf=1FAIpQLSeGERJlxhxsUP9xJNeh5r7CEp_QDDlDarFc95Phizztv2cxRA" style="--i:3;">Register</a> 
+      </nav>
+    </header>
     <main>
       <h1 class="grad">Test your knowledge!</h1>
       <p>JAVASCRIPT QUESTIONS</p>
