@@ -801,3 +801,7 @@ hr {
 #cScore, #reason, #questions {
   color: #fff;
 }
+
+.col {
+  text-align: left
+}
