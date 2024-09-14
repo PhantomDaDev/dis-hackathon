@@ -802,3 +802,11 @@ hr {
 .col {
   text-align: left
 }
+
+@font-face {
+  font-family: 'Geist';
+  src: '../Geist-Regular.ttf'
+
+.geist {
+  font-family: 'Geist';
+}
