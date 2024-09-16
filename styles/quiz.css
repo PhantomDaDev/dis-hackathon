@@ -51,6 +51,7 @@ h2 {
   animation-iteration-count: infinite;
   transition: transform 0.3s ease;
   align-items: center;
+  width: 500px;
 }
 
 #options button:hover {
