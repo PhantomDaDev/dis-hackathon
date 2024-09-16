@@ -36,6 +36,12 @@ h2 {
   color: rgb(0, 17, 255);
 }
 
+#options {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 #options button {
   margin: 10px;
   background-color: hsl(150, 100%, 51%);
