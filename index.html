@@ -7,15 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/14260b0478.js" crossorigin="anonymous"></script>
-    <style>
-        .countdown {
-            font-size: 2em;
-            text-align: center;
-
-        }
-
-
-    </style>
+    
   </head>
   <body>
     <header class="header">
@@ -33,13 +25,9 @@
         <a href="https://prettyform.addxt.com/a/form/?vf=1FAIpQLSeGERJlxhxsUP9xJNeh5r7CEp_QDDlDarFc95Phizztv2cxRA" style="--i:3;">Register</a> 
       </nav>
     </header>
-      <br><br><br><br>
-      <div class="countdown">
-        <div id="countdown"></div>
-      </div>
     <main>
       <div class="container">
-
+        <br><br><br>
         <h2 class="jetbrains-mono-semibold gradient">Dunes Hackathon</h2>
         <h1>The drive to <span class="autotype"></span></h1>
         <button class="btn" onlick="window.location.href='#about'">Explore</button>
@@ -84,48 +72,7 @@
       </div>
     </main>
     <br><br><br><br><br>
-    <script>
-        function updateCountdown() {
-            const targetDate = new Date('October 27, 2024 00:00:00').getTime();
-            const now = new Date().getTime();
-            const difference = targetDate - now;
 
-            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-            document.getElementById('countdown').innerHTML =
-                `<span class="time">${days}d</span> : 
-                 <span class="time">${hours}h</span> : 
-                 <span class="time">${minutes}m</span> : 
-                 <span class="time">${seconds}s</span>`;
-
-            if (difference < 0) {
-                document.getElementById('countdown').innerHTML = "The event has passed.";
-            }
-        }
-
-        setInterval(updateCountdown, 1000);
-    </script>
-
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed(".autotype", {
-        strings: ['create','innovate', 'develop', 'design', 'win', 'build'],
-        typeSpeed: 150,
-        backSpeed: 300,
-        loop: true,
-        cursorChar: '_',
-      });
-
-      var memory = new Typed(".memory", {
-        strings: ['↓ DOWN THE MEMORY LANE ↓'],
-        typeSpeed: 50,
-        cursorChar: '_',
-        showCursor: false,
-      });
-    </script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed(".autotype", {
