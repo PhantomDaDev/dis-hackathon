@@ -89,7 +89,7 @@ body {
   left: 0;
   width: 100%;
   padding: 1.3rem 10%;
-  background: #000;
+  background: #05061c;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,7 +107,7 @@ body {
 }
 
 .navbar {
-  color: #000;
+  color: #05061c;
   border-radius: 100px;
 }
 
