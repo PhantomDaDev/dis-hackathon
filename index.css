@@ -85,12 +85,11 @@ body {
 }
 
 .header {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 1.3rem 10%;
-  background: #28242c;
+  background: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,7 +107,7 @@ body {
 }
 
 .navbar {
-  color: #28242c;
+  color: #000;
   border-radius: 100px;
 }
 
