@@ -151,11 +151,11 @@ h2 {
 
 @font-face {
   font-family: 'Geist';
-  src: url(../Geist-Regular.ttf);
+  src: url(Geist-Regular.ttf);
 }
 
 html {
-  scroll-behaviour: smooth;
+  scroll-behavior: smooth;
 }
 
 .geist {
@@ -236,7 +236,7 @@ body {
   left: 0;
   width: 100%;
   padding: 1.3rem 10%;
-  background: #28242c;
+  background: #05061c;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -248,13 +248,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 60%%;
   height: 100%;
   z-index: -1;
 }
 
 .navbar {
-  color: #28242c;
+  color: #05061c;
   border-radius: 100px;
 }
 
@@ -288,7 +288,6 @@ body {
 
 .container {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -801,20 +800,4 @@ hr {
   .logoo {
     font-size: 40px;
   }
-}
-
-#cScore, #reason, #questions {
-  color: #fff;
-}
-
-.col {
-  text-align: left
-}
-
-@font-face {
-  font-family: 'Geist';
-  src: '../Geist-Regular.ttf'
-
-.geist {
-  font-family: 'Geist';
 }
