@@ -712,3 +712,9 @@ hr {
     font-size: 40px;
   }
 }
+
+@font-face {
+  font-family: 'Geist';
+  src: url("../Geist-Regular.ttf");
+}
+
