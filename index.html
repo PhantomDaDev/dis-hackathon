@@ -7,122 +7,157 @@
     <link rel="stylesheet" href="index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/14260b0478.js" crossorigin="anonymous"></script>
-    
-  </head>
-  <body>
+</head>
+<body>
     <header class="header">
-      <a href="index.html" class="logo"><img src='logo.png' height="100"></a>
-      <input type="checkbox" id="check">
-      <label for="check" class="icons">
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <i class='bx bx-x' id="close-icon"></i>
-      </label>
+        <a href="index.html" class="logo"><img src='logo.png' height="100"></a>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
 
-      <nav class="navbar">
-        <a href="index.html" style="--i:0;">Home</a>
-        <a href="gallery.html" style="--i:1;">Gallery</a>
-        <a href="https://duneshackathon.vercel.app/pages/quiz.html" style="--i:2;">Quiz</a>
-        <a href="https://forms.office.com/pages/responsepage.aspx?id=1U8KHUk0uEuKSKT5jv6RV9KfAtMgaaRFlQAphadRY4lUMkxZMEJHOTlNQVpHWU5HUk5EQVpNU1FJVy4u&route=shorturl" style="--i:3;">Register</a> 
-      </nav>
+        <nav class="navbar">
+            <a href="index.html" style="--i:0;">Home</a>
+            <a href="gallery.html" style="--i:1;">Gallery</a>
+            <a href="https://duneshackathon.vercel.app/pages/quiz.html" style="--i:2;">Quiz</a>
+            <a href="https://forms.office.com/pages/responsepage.aspx?id=1U8KHUk0uEuKSKT5jv6RV9KfAtMgaaRFlQAphadRY4lUMkxZMEJHOTlNQVpHWU5HUk5EQVpNU1FJVy4u&route=shorturl" style="--i:3;">Register</a> 
+        </nav>
     </header>
+
     <main>
-      <div class="container">
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <h2 class="jetbrains-mono-semibold gradient">Dunes Hackathon</h2>
-        <h1>The drive to <span class="autotype"></span></h1>
-        <button class="btn" onclick="window.location.href='#about'">Explore</button>
-      </div>
+        <div class="container">
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <h2 class="jetbrains-mono-semibold gradient" id="countdown-text">Dunes Hackathon</h2>
+            <h1>The drive to <span class="autotype"></span></h1>
+            <button class="btn" onclick="window.location.href='#about'">Explore</button>
+        </div>
         <br><br><br><br><br><br><br>
-      <h1 class="jetbrains-mono-semibold gradient" id='about'>About</h1>
-      <p class="about geist" id="about" style="color: white; margin: 100px; text-align: center; font-size: 24px;">
-        Dunes International School believes in empowering students to think critically and embrace technology. Breaking new grounds in innovation, the school  is proudly organizing its second Inter-school hackathon exclusively for students of grades 9 to 12!
-Each school can register two teams (consisting of a group of 3 members only).
-      </p>
-      <h1 class="jetbrains-mono-semibold gradient memory"></h1>
-      <div class="timeline">
-        <div class="timeline-container left-container">
-            <img src="download-removebg-preview (1).png" alt="circle" height="40px">
-            <div class="textbox">
-                <h3 class="geist">Hackathon 1.0</h2>
-                <small class="geist">2023</small>
-                <br>
-                <p class="geist">
-                    The first Dunes Hackathon, conducted on September 2023
-                </p>
-                <span class="left-container-arrow">
-            
-                </span>
-                <br>
-                <button class="bttn geist" onclick="window.location.href='gallery.html'">See 2023 highlights</button>
+        <h1 class="jetbrains-mono-semibold gradient" id='about'>About</h1>
+        <p class="about geist" style="color: white; margin: 100px; text-align: center; font-size: 24px;">
+            Dunes International School believes in empowering students to think critically and embrace technology. Breaking new grounds in innovation, the school is proudly organizing its second Inter-school hackathon exclusively for students of grades 9 to 12! Each school can register two teams (consisting of a group of 3 members only).
+        </p>
+        <h1 class="jetbrains-mono-semibold gradient memory"></h1>
+        <div class="timeline">
+            <div class="timeline-container left-container">
+                <img src="download-removebg-preview (1).png" alt="circle" height="40px">
+                <div class="textbox">
+                    <h3 class="geist">Hackathon 1.0</h2>
+                    <small class="geist">2023</small>
+                    <br>
+                    <p class="geist">
+                        The first Dunes Hackathon, conducted on September 2023
+                    </p>
+                    <span class="left-container-arrow"></span>
+                    <br>
+                    <button class="bttn geist" onclick="window.location.href='gallery.html'">See 2023 highlights</button>
+                </div>
+            </div>
+            <div class="timeline-container right-container">
+                <img src="download-removebg-preview (1).png" alt="circle" height="40px">
+                <div class="textbox">
+                    <h3 class="geist">Hackathon 2.0</h2>
+                    <small class="geist">2024</small>
+                    <br>
+                    <p class="geist">
+                        The second Dunes Hackathon, to be conducted on October 27th 2024
+                    </p>
+                    <span class="right-container-arrow"></span>
+                </div>
             </div>
         </div>
-        <div class="timeline-container right-container">
-            <img src="download-removebg-preview (1).png" alt="circle" height="40px">
-            <div class="textbox">
-                <h3 class="geist">Hackathon 2.0</h2>
-                <small class="geist">2024</small>
-                <br>
-                <p class="geist">
-                    The second Dunes Hackathon, to be conducted on October 27th 2024
-                </p>
-                <span class="right-container-arrow"></span>
-            </div>
-        </div>
-      </div>
     </main>
     <br><br><br><br><br>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-      var typed = new Typed(".autotype", {
-        strings: ['create','innovate', 'develop', 'design', 'win', 'build'],
-        typeSpeed: 150,
-        backSpeed: 300,
-        loop: true,
-        cursorChar: '_',
-      });
+        var typed = new Typed(".autotype", {
+            strings: ['create', 'innovate', 'develop', 'design', 'win', 'build'],
+            typeSpeed: 150,
+            backSpeed: 300,
+            loop: true,
+            cursorChar: '_',
+        });
 
-      var memory = new Typed(".memory", {
-        strings: ['↓ DOWN THE MEMORY LANE ↓'],
-        typeSpeed: 50,
-        cursorChar: '_',
-        showCursor: false,
-      });
+        var memory = new Typed(".memory", {
+            strings: ['↓ DOWN THE MEMORY LANE ↓'],
+            typeSpeed: 50,
+            cursorChar: '_',
+            showCursor: false,
+        });
+
+        const countdownText = document.getElementById("countdown-text");
+        let showCountdown = true;
+
+        function toggleText() {
+            showCountdown = !showCountdown;
+            if (showCountdown) {
+                countdown();
+            } else {
+                countdownText.innerHTML = "Dunes Hackathon";
+            }
+        }
+
+        function countdown() {
+            const targetDate = new Date("October 27, 2024 00:00:00").getTime();
+            const now = new Date().getTime();
+            const timeRemaining = targetDate - now;
+
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            if (timeRemaining < 0) {
+                countdownText.innerHTML = "0:0:0:0";
+            } else {
+                countdownText.innerHTML = `${days}:${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            }
+        }
+
+        setInterval(() => {
+            toggleText();
+            if (showCountdown) {
+                countdown();
+            }
+        }, 5000);
+
+        setInterval(countdown, 1000);
     </script>
-        <footer id="footer">
-          <div class="row">
-            <div class="col">
-              <img src='logo.png' height="100">
-              <p class="geist">Dunes Hackathon - a great place to be creative</p>
-            </div>
-            <div class="col">
-              <h3>Contact <div class="underline"><span></span></div></h3>
-              <p class="geist">PO Box 5121</p>
-              <p class="geist">Plot 19, Sector 9</p>
-              <p class="geist">Abu Dhabi</p>
-              <p class="geist gmail"><b>info@dunesinternationalschool.com</b></p>
 
+    <footer id="footer">
+        <div class="row">
+            <div class="col">
+                <img src='logo.png' height="100">
+                <p class="geist">Dunes Hackathon - a great place to be creative</p>
             </div>
             <div class="col">
-              <h3>Made By <div class="underline"><span></span></div></h3>
-              <ul>
-                <li>Shahaan</li>
-                <li>Pragalbh</li>
-                <li>Criston</li>
-                <li>Sarvesh</li>
-              </ul>
+                <h3>Contact <div class="underline"><span></span></div></h3>
+                <p class="geist">PO Box 5121</p>
+                <p class="geist">Plot 19, Sector 9</p>
+                <p class="geist">Abu Dhabi</p>
+                <p class="geist gmail"><b>info@dunesinternationalschool.com</b></p>
             </div>
             <div class="col">
-              <h3>Social Media <div class="underline"><span></span></div></h3>
-              <div class="social-icons">
-                <i class="fa-solid fa-globe br" onclick="window.location.href='https://www.dunesinternationalschool.com'"></i>
-                <i class="fa-brands fa-facebook br" onclick="window.location.href='https://www.facebook.com/DunesInternationalSchoolAbuDhabi/'"></i>
-                <i class="fa-brands fa-instagram br" onclick="window.location.href='https://www.instagram.com/disabudhabi/?hl=en'"></i>
-                <i class="fa-brands fa-youtube br" onclick="window.location.href='https://www.youtube.com/channel/UCpFOyi3iMlfAtyf1Xg4M8ew'"></i>
-              </div>
+                <h3>Made By <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li>Shahaan</li>
+                    <li>Pragalbh</li>
+                    <li>Criston</li>
+                    <li>Sarvesh</li>
+                </ul>
             </div>
-          </div>
-          <hr>
-        </footer>
-  
+            <div class="col">
+                <h3>Social Media <div class="underline"><span></span></div></h3>
+                <div class="social-icons">
+                    <i class="fa-solid fa-globe br" onclick="window.location.href='https://www.dunesinternationalschool.com'"></i>
+                    <i class="fa-brands fa-facebook br" onclick="window.location.href='https://www.facebook.com/DunesInternationalSchoolAbuDhabi/'"></i>
+                    <i class="fa-brands fa-instagram br" onclick="window.location.href='https://www.instagram.com/disabudhabi/?hl=en'"></i>
+                    <i class="fa-brands fa-youtube br" onclick="window.location.href='https://www.youtube.com/channel/UCpFOyi3iMlfAtyf1Xg4M8ew'"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </footer>
 </body>
+</html>
